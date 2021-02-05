@@ -1,0 +1,29 @@
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+}
+a {
+    padding: 10px;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right_footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+}
