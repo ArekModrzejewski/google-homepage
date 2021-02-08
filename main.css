@@ -1,4 +1,6 @@
-
+body {
+    height: vie;
+}
 nav {
     display: flex;
     justify-content: flex-end;
@@ -7,23 +9,26 @@ nav {
 a {
     padding: 10px;
 }
-#logo {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#form {
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#form_buttons {
+.form_buttons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#right_footer {
+.right_footer {
     display: flex;
     justify-content: flex-end;
     align-items: right;
+}
+footer {
+    align-self: ;
 }
