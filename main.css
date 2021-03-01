@@ -8,22 +8,42 @@ body {
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: column;
     flex-grow: 1;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
 }
 nav {
     font-size: small;
     display: flex;
     justify-content: right;
-    align-content: center;
-
+    padding: 15px;
+}
+.nav_btn {
+    padding: 0px 15px;
+    color: white;
+    background-color: rgba(34, 53, 219, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.nav_btn:hover {
+    box-shadow: 2px 2px blue, -2px -2px blue, -2px 2px blue, 2px -2px blue;
+    transition: 1s;
+    background-color: white;
+    color: blue;
+}
+#svg {
+    width: 18px;
+    padding: 0 20px 0 10px;
+    margin: 0px;
 }
 a {
     padding: 10px;
     text-decoration: none;
 }
-a:link {
+.a_footer:link {
     color: rgba(0,0,0,0.54);
 }
 a:hover {
@@ -33,28 +53,48 @@ a:visited {
     color: rgba(0,0,0,0.54);
 }
 .logo {
-
     display: flex;
     justify-content: center;
 }
-input {
+.search-form {
     border: 1px solid rgb(201, 201, 201, 0.6);
     border-radius: 21px;
-    width: 540px;
+    width: 520px;
     height: 42px;
+    padding-left: 40px;
+}
+.search-form:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+input:focus {
+    outline: none;
 }
 .form {
-    margin-top: 50px;
+    max-width: max-content;
+    position: relative;
+    margin: 25px 20px 0px 20px;
     display: flex;
     justify-content: center;
 }
+.form img {
+    top: 13px;
+    left: 14px;
+    width: 20px;
+    position: absolute;
+    opacity: 50%;
+}
 button {
-    margin: 10px;
-    padding: 10px;
     border: none;
 }
-button, .form_btn {
-    background-color: rgba(207, 215, 250, 0.2);
+.form_btn {
+    font-family: arial;
+    background-color: rgba(207, 215, 250, 0.15);
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.form_btn:hover {
+    box-shadow: 1px 0 rgba(0, 0, 0, 0.2), -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2);
 }
 .form_buttons {
     padding: 20px;
@@ -63,7 +103,7 @@ button, .form_btn {
     align-items: center;
 }
 .top_footer {
-    padding: 12px 12px 12px 30px;
+    padding: 15px 12px 15px 30px;
     border-bottom: 1px solid rgb(201, 201, 201);
     background-color: rgba(0, 0, 0, 0.07);
 }
@@ -72,7 +112,7 @@ button, .form_btn {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 3px 20px 3px 20px;
+    padding: 6px 20px;
     background-color: rgba(0, 0, 0, 0.07);
 }
 .right_footer {
@@ -80,11 +120,10 @@ button, .form_btn {
     justify-content: flex-end;
 }
 .left_footer {
-        display: flex;
-        justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
 footer {
-
-    font-size: small;
+    font-size: 14px;
     color: rgba(0,0,0,0.54);
 }
