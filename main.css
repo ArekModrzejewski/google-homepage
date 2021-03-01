@@ -70,7 +70,7 @@ input:focus {
     outline: none;
 }
 .form {
-    max-width: max-content;
+    max-width: 90vw;
     position: relative;
     margin: 25px 20px 0px 20px;
     display: flex;
